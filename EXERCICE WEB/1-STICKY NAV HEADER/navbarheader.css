@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background-color: rgb(34, 33, 32);
+}
+
+
+.NavBar_logo {
+  margin-right: auto;
+}
+
+.logo {
+  height: 5rem;
+  margin: 5px;
+}
+
+.NavBar_lien {
+  list-style: none;
+}
+
+.NavBar_lien li {
+  display: inline-block;
+  padding: 0 1.70rem;
+}
+
+.NavBar_lien li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  transition: all 0.5s ease 0s;
+  color: white;
+  background:
+    linear-gradient(
+      to right,
+      rgba(34, 33, 32, 1),
+      rgba(34, 33, 32, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1)
+  );
+  background-size: 100% 3px, 0 2px;
+  background-position: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.NavBar_lien li a:hover {
+    
+    background-size: 0 3px, 100% 2px;
+}

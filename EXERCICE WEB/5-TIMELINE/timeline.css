@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-size:cover;
+    background-image: url("../images/gta/gta5_roue.jpg");
+    color: white;
+    padding: 2em;
+}
+
+body::before{
+    content: '';
+    background: rgba(rgb(224, 220, 220), rgb(56, 90, 56), rgb(25, 25, 185), alpha);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0.3em;
+    font-size: 3em;
+}
+
+h2{
+    margin-bottom: 0.5em;
+}
+
+.titre{
+    text-align: center;
+}
+
+.titre p{
+    color: #0d71fc;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.bloc{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    
+}
+
+.bloc div{
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 1.5em;
+    background-color: black;
+}
+
+.bloc p{
+    line-height: 27px;
+    color: #d3d2d2;
+}
+
+.bloc:nth-child(odd){
+    border-left: 3px solid white;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+
+.bloc:nth-child(even){
+    border-right: 3px solid white;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+
+.bloc:nth-child(odd)::before,
+.bloc:nth-child(even)::before{
+    content: '';
+    background: white;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bloc:nth-child(odd)::before{
+    left: 0;
+}
+
+.bloc:nth-child(even)::before{
+    right: 0;
+}
+
+.bloc:nth-child(odd)div::before,
+.bloc:nth-child(even)div::before{
+    content: '';
+    background: white;
+    box-shadow: 0 0 0.5em #0d71fc;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.bloc:nth-child(odd)div::before{
+    left: -0.5em;
+}
+.bloc:nth-child(even)div::before{
+    right: -0.5em;
+}

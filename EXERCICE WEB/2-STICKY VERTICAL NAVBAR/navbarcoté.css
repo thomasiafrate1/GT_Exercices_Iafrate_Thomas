@@ -1,0 +1,36 @@
+.NavBar_coté {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .NavBar_coté ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .NavBar_coté li {
+    margin-bottom: 10px;
+  }
+  
+  .NavBar_coté li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .NavBar_coté li a:hover {
+    background-color: #111;
+  }
+  
+  #section1, #section2, #section3, #section4, #section5, #section6 {
+    height: 100vh;
+    margin-left: 120px;
+    background-color: #ddd;
+  }

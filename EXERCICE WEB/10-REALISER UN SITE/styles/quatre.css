@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  background-color:rgb(34, 33, 32) ;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../../images/prod/fond6.jpg");
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(34, 33, 32);
+  z-index: 45148521;
+  top: 0;
+  right: 0;
+}
+
+
+.NavBar_logo {
+  margin-right: auto;
+}
+
+.logo {
+  height: 5rem;
+  margin: 5px;
+}
+
+.NavBar_lien {
+  list-style: none;
+}
+
+.NavBar_lien li {
+  display: inline-block;
+  padding: 0 1.70rem;
+}
+
+.NavBar_lien li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  transition: all 0.5s ease 0s;
+  color: white;
+  background:
+    linear-gradient(
+      to right,
+      rgba(34, 33, 32, 1),
+      rgba(34, 33, 32, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1)
+  );
+  background-size: 100% 3px, 0 2px;
+  background-position: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.NavBar_lien li a:hover {
+    
+    background-size: 0 3px, 100% 2px;
+}
+
+
+.titre{
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.titre p{
+    color: #0d71fc;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+
+.titre_influ{
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+    font-size: 20px;
+}
+
+.p_influ{
+    color: #a9acaf;
+    font-size: 1.3em;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 50px;
+}
+
+
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
