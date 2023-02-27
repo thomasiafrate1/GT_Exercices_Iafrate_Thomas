@@ -1,247 +1,101 @@
 * {
-    box-sizing: border-box;
-  }
-  html,
-  body {
-    background-color: #111;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #fff;
-  }
-  .carousselConteneur {
-    display: inline-block;
-  }
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+
+
+label {
+	background: #444;
+	color: #fff;
+	transition: transform 400ms ease-out;
+	display: inline-block;
   
-  .carousel__slide {
-    overflow: hidden;
-  }
-  
-  h1 {
-    font-size: 50px;
-    line-height: 50px;
-    color: #fafafa;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    margin-top: -25px;
-  }
-  h2,
-  h3 {
-    color: #fafafa;
-  }
-  h3 {
-    font-size: 50px;
-  }
-  
-  .carousel__slide:nth-of-type(1),
-  .carousel--thumb {
-    background-image: url("../images/gta/gta5_arbre.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .carousel__slide:nth-of-type(2),
-  .carousel--thumb  {
-    background-image: url("../images/gta/gta5_montagne.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .carousel__slide:nth-of-type(3),
-  .carousel--thumb  {
-    background-image: url("../images/gta/gta5_roue.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .carousel__slide:nth-of-type(4),
-  .carousel--thumb  {
-    background-image: url("../images/gta/gta5_villenuit.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .carousel__slide:nth-of-type(5),
-  .carousel--thumb {
-    background-image: url("../images/gta/gta5_voiture.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  
-
-
-
-
-
-
-.carousel {
-  height: 500px;
-  width: 600px;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  padding: 0;
-  list-style: none;
-}
-.carousel__controls,
-.carousel__activator {
-  display: none;
-}
-.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
-  transform: translateX(0%);
-}
-.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
-  transition: opacity 0.5s, transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transform: scale(1);
-}
-.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
-  display: block;
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
-  transform: translateX(-100%);
-}
-.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
-  transition: opacity 0.5s, transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transform: scale(1);
-}
-.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
-  display: block;
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
-  transform: translateX(-200%);
-}
-.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
-  transition: opacity 0.5s, transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transform: scale(1);
-}
-.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
-  display: block;
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
-  transform: translateX(-300%);
-}
-.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
-  transition: opacity 0.5s, transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transform: scale(1);
-}
-.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
-  display: block;
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
-  transform: translateX(-400%);
-}
-.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
-  transition: opacity 0.5s, transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transform: scale(1);
-}
-.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
-  display: block;
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
-  opacity: 1;
-}
-.carousel__control {
-  height: 30px;
-  width: 30px;
-  margin-top: -15px;
-  top: 50%;
-  position: absolute;
-  display: block;
-  cursor: pointer;
-  border-width: 5px 5px 0 0;
-  border-style: solid;
-  border-color: #fafafa;
-  opacity: 0.35;
-  outline: 0;
-  z-index: 3;
-}
-.carousel__control:hover {
-  opacity: 1;
-}
-.carousel__control--backward {
-  left: 10px;
-  transform: rotate(-135deg);
-}
-.carousel__control--forward {
-  right: 10px;
-  transform: rotate(45deg);
+	width: 100vw;
+	height: 50vh;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	line-height: 100vh;
 }
 
-.carousel__track {
-  position: absolute;
-  top: 0;
-  right: 0;
+form {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right:0;
   bottom: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  transition: transform 0.5s ease 0s;
+	white-space: nowrap;
 }
-.carousel__track .carousel__slide {
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
+input {
+	position: absolute;
 }
-.carousel__track .carousel__slide:nth-of-type(1) {
-  transform: translateX(0%);
+
+
+
+
+
+input:nth-of-type(1):checked ~ label:nth-of-type(1), 
+input:nth-of-type(2):checked ~ label:nth-of-type(2),
+input:nth-of-type(3):checked ~ label:nth-of-type(3),
+input:nth-of-type(4):checked ~ label:nth-of-type(4){
+   z-index: 0;
 }
-.carousel__track .carousel__slide:nth-of-type(2) {
-  transform: translateX(100%);
+
+input:nth-of-type(1):checked ~ label {
+	transform: translate3d(0, 0, 0);
 }
-.carousel__track .carousel__slide:nth-of-type(3) {
-  transform: translateX(200%);
+
+input:nth-of-type(2):checked ~ label {
+	transform: translate3d(-100%, 0, 0);
 }
-.carousel__track .carousel__slide:nth-of-type(4) {
-  transform: translateX(300%);
+
+input:nth-of-type(3):checked ~ label {
+	transform: translate3d(-200%, 0, 0);
 }
-.carousel__track .carousel__slide:nth-of-type(5) {
-  transform: translateX(400%);
+
+input:nth-of-type(4):checked ~ label {
+	transform: translate3d(-300%, 0, 0);
 }
-.carousel--scale .carousel__slide {
-  transform: scale(0);
+
+label {
+	background: #444;
+	background-size:cover ;
+	font-size: 3rem;
 }
-.carousel__slide {
-  height: 100%;
-  position: absolute;
-  overflow-y: auto;
-  opacity: 0;
+
+label[for="4èmeSlide"],
+label[for="2èmeSlide"] {
+	background: #cc0000;
 }
-/**
-  * Theming
-*/
+
+label:before,
+label:after {
+	color: white;
+	display: block;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	padding: 1rem;
+	font-size: 3rem;
+	height: 10rem;
+	line-height: 10rem;
+	top: 50%;
+	transform: translate3d(0, -50%, 0);
+	cursor: pointer;
+}
+
+label:before {
+	content: "\276D";
+	right: 100%;
+}
+
+label:after {
+	content: "\276C";
+	left: 100%;
+}
+
+

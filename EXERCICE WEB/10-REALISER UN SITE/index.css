@@ -120,6 +120,17 @@ header {
 */
 
 
+body::-webkit-scrollbar {
+  width: 12px; 
+  background-color: rgb(207, 174, 64); 
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  width: 5px;
+  border-radius: 15px; 
+}
 
 
 
@@ -127,6 +138,7 @@ header {
 
 .carousel {
   position: relative;
+  display: flex;
   width: 750px;
   height: 550px; /* changer taille du carousel*/
   overflow: hidden;

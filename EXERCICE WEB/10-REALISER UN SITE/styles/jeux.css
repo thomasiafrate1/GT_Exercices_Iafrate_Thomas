@@ -105,6 +105,19 @@ header {
   }
 
 
+  body::-webkit-scrollbar {
+    width: 12px; 
+    background-color: rgb(207, 174, 64); 
+  }
+  
+ 
+  body::-webkit-scrollbar-thumb {
+    background-color: black;
+    width: 5px;
+    border-radius: 15px; 
+  }
+
+
 #section0{
     height: 80px;
 }
@@ -126,7 +139,12 @@ h1{
     text-align: center;
 
 }
-
+@media screen and (max-width: 1734px) {
+  h1{
+    text-align: center;
+    font-size: 50px;
+}
+}
 p{
     margin: 90px;
     line-height: 65px;
@@ -138,6 +156,12 @@ p{
 .description{
     display: flex;
     width: 94;
+}
+@media screen and (max-width: 1734px) {
+  .description{
+    display: flex;
+    width: 5;
+}
 }
 
 
