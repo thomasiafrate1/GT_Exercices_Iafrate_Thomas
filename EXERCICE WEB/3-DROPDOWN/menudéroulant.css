@@ -1,52 +1,113 @@
-.navbar {
-    background-color: #333;
-    color: #fff;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(24, 23, 23);
+}
+
+.eastereggs{
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+}
+.eastereggs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  width: 150px;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+   
+}
+
+.eastereggs .dropdown {
+  display: inline-block;
+  top: 0;
+  position: relative;
+}
+
+.eastereggs .dropdown a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.eastereggs ul li:hover > ul {
+  display: block;
+}
+
+.eastereggs ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid white ;
+}
+
+.eastereggs ul ul li {
+  display: block;
+}
+
+.eastereggs ul ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.eastereggs ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+
+#section1, #section2, #section3, #section4, #section5, #section6, #section7 {
+  height: 90vh;
+  margin-left: 0;
+  background-color: #2b2929;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 100px;
+  align-items: center;
+}
+
+img{
+  width: 350px;
+  margin-top: 50px;
+}
+
+.titre{
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.titre p{
+  color: #c0c1c2;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .titre p{
+    color: #aaabac;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .navbar li {
-    display: inline-block;
-    position: relative;
-    margin-right: 20px;
+  img{
+    width: 200px;
+    margin-top: 50px;
   }
-  
-  .navbar a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .navbar a:hover {
-    background-color: #111;
-  }
-  
-  .dropdown ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-  }
-  
-  .dropdown:hover ul {
-    display: block;
-  }
-  
-  .submenu ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #333;
-  }
-  
-  .submenu:hover ul {
-    display: block;
-  }
+}

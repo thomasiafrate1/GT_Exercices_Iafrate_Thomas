@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(24, 23, 23);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 15005101;
+    background-color: rgb(34, 33, 32);
+    top: 0;
+    left: 0;
+  }
+  
+  
+  .NavBar_logo {
+    margin-right: auto;
+  }
+  
+  .logo {
+    height: 5rem;
+    margin: 5px;
+  }
+  
+  .NavBar_lien {
+    list-style: none;
+  }
+  
+  .NavBar_lien li {
+    display: inline-block;
+    padding: 0 1.70rem;
+  }
+  
+  .NavBar_lien li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    transition: all 0.5s ease 0s;
+    color: white;
+    background:
+      linear-gradient(
+        to right,
+        rgba(34, 33, 32, 1),
+        rgba(34, 33, 32, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 1)
+    );
+    background-size: 100% 3px, 0 2px;
+    background-position: 100% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  .NavBar_lien li a:hover {
+      
+      background-size: 0 3px, 100% 2px;
+  }
+  
+  
+
+.eastereggs{
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+}
+.eastereggs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  width: 150px;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+   
+}
+
+.eastereggs .dropdown {
+  display: inline-block;
+  top: 0;
+  position: relative;
+}
+
+.eastereggs .dropdown a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.eastereggs ul li:hover > ul {
+  display: block;
+}
+
+.eastereggs ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid white ;
+}
+
+.eastereggs ul ul li {
+  display: block;
+}
+
+.eastereggs ul ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.eastereggs ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+
+#section1, #section2, #section3, #section4, #section5, #section6, #section7 {
+  height: 90vh;
+  margin-left: 0;
+  background-color: #2b2929;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 100px;
+  align-items: center;
+}
+
+.images_eastereggs{
+  width: 350px;
+  margin-top: 50px;
+}
+
+.titre{
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.titre p{
+  color: #c0c1c2;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .titre p{
+    color: #aaabac;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img{
+    width: 200px;
+    margin-top: 50px;
+  }
+}
+
+
+
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
